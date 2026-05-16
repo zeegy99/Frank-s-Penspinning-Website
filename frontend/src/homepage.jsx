@@ -7,7 +7,7 @@ function Homepage() {
     const navigate = useNavigate();
 
     const test_api = async () => {
-        const response = await fetch("http://localhost:5555/api/test");
+        const response = await fetch("http://54.242.226.47:5555/api/test");
         const data = await response.text();
         console.log(data)
     }
