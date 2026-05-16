@@ -21,6 +21,8 @@ function Homepage() {
 
         <p> new Push</p>
 
+        <p>newest push</p>
+
         <button onClick={buy_pen}>
             Buy Toto's Pen
         </button>
