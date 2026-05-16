@@ -19,6 +19,8 @@ function Homepage() {
         <>
         Tester
 
+        <p> new Push</p>
+
         <button onClick={buy_pen}>
             Buy Toto's Pen
         </button>
