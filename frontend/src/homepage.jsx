@@ -8,7 +8,7 @@ function Homepage() {
     const [email_confirmation, set_email_confirmation] = useState(false); 
 
     const test_api = async () => {
-        const response = await fetch("http://54.242.226.47:5555/api/test");
+        const response = await fetch('https://api.psplanet.store/api/test');
         const data = await response.text();
         console.log(data)
     }
@@ -26,7 +26,7 @@ function Homepage() {
                 content: e.target.content.value,
             };
         
-        const response = await fetch('http://54.242.226.47:5555/api/contact', 
+        const response = await fetch('https://api.psplanet.store/api/contact', 
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
