@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f9f9f9;
+}
+
+/* Banner */
+.banner {
+    background: #111;
+    color: #fff;
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Main content */
+.content {
+    padding: 24px 28px;
+}
+
+/* Buttons */
+button {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 8px 8px 8px 0;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Contact form */
+.contact-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 24px 0 4px;
+}
+
+form {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px 24px;
+    max-width: 480px;
+    margin-top: 12px;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #111;
+}
+
+input[type="submit"] {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: #333;
+}
+
+.success-msg {
+    margin-top: 12px;
+    font-size: 13px;
+    color: green;
+}

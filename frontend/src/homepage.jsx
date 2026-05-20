@@ -2,6 +2,7 @@
 // import Location from './location';
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import './homepage.css';
 
 function Homepage() {
     const navigate = useNavigate();
@@ -39,49 +40,39 @@ function Homepage() {
     }
 
     return (
-        <>
-        Tester
+    <>
+    <div className="banner">
+        <p className="banner-text">Planet Penspinning</p>
+    </div>
 
-        <p> new Push</p>
+    <div className="content">
+        <button onClick={buy_pen}>Buy Toto's Pen</button>
+        <button onClick={test_api}>Test Backend</button>
 
-        <p>newest push</p>
-
-        <button onClick={buy_pen}>
-            Buy Toto's Pen
-        </button>
-
-        <button onClick={test_api}>
-            Test Backend
-        </button>
-
-        <p>Contact Us</p>
-        <div>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label for="fname">Full Name: </label>
-                    <input type="text" placeholder="Your Name" id="fname" required></input>
-                </div>
-                <div>
-                    <label for="email">Email Address: </label>
-                    <input type="email" placeholder="example@gmail.com" id="email" required></input>
-                </div>
-
-                <div>
-                     <label for="content">Inquiry: </label>
-                    <input type="text" placeholder="Your Inquiries" id="content" required></input>
-                </div>
-
-                <div>
-                    <input type="submit"></input>
-                </div>
-
-            </form>
-            {email_confirmation && (
-                <p>Successful, please check your email for confirmation</p>
-            )}
-        </div>
-        </>
-    )
+        <p className="contact-title">Contact Us</p>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="fname">Full Name</label>
+                <input type="text" placeholder="Your Name" id="fname" required />
+            </div>
+            <div>
+                <label htmlFor="email">Email Address</label>
+                <input type="email" placeholder="example@gmail.com" id="email" required />
+            </div>
+            <div>
+                <label htmlFor="content">Inquiry</label>
+                <input type="text" placeholder="Your message..." id="content" required />
+            </div>
+            <div>
+                <input type="submit" value="Send Message" />
+            </div>
+        </form>
+        {email_confirmation && (
+            <p className="success-msg">✓ Sent! Check your email for confirmation.</p>
+        )}
+    </div>
+    </>
+)
 }
 
 export default Homepage;
